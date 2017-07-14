@@ -1,4 +1,11 @@
 # backendAPI
+# Setting Database configuration
+databaseName password user
+# Transaction without database
+All transactions are saved in memory file
+# Filename = transaction.txt
+The file resides in resources folder inside the project
+
 # endpoints api
 # CASE MEMORY WITHOUT DATABASE
 # backend API transactions case File memory
