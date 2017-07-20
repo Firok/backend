@@ -87,7 +87,7 @@ public class TransactionController {
 		Duration duration = Duration.between(before, after);
 		long convertDurationToMillis = duration.toMillis();
 		// update status
-		status = (convertDurationToMillis <= 60 ? 201 : 204);
+		status = (convertDurationToMillis <= 60000 ? 201 : 204);
 		// update amount and timestamp in millis
 		Transaction transaction = new Transaction(Double.parseDouble(amount), timeofEpoch.getEpochSecond(), status);
 
