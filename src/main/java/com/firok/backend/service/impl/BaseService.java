@@ -11,6 +11,10 @@ public abstract  class BaseService<T, K extends Serializable> implements IBaseSe
 
 	protected abstract IBaseDao<T, K> getDao();
 
+	/**
+	 * get all rows from table
+	 * @return list of all data from any specific table
+	 */
 	@Override
 	public List<T> findAll() {
 		return getDao().findAll();

@@ -9,6 +9,7 @@ public class MainController {
 	
 	@RequestMapping("/transaction")
     public String getTransactionPage() {
+		//return transaction.html
         return "transaction";
     }
 }

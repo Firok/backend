@@ -13,6 +13,7 @@ public class ConfigureJSFContextParameters implements ServletContextInitializer 
 
 	@Override
 	public void onStartup(ServletContext context) throws ServletException {
+		System.out.println("JSFContextParameters CONFIG");
 		context.setInitParameter("javax.faces.DEFAULT_SUFFIX", ".xhtml");
 		context.setInitParameter("javax.faces.PARTIAL_STATE_SAVING_METHOD", "true");
 		context.setInitParameter("javax.faces.PROJECT_STAGE", "Development");

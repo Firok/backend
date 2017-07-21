@@ -6,7 +6,7 @@ import java.util.List;
 public interface IBaseService<T, K extends Serializable> {
 
 	/**
-	 * get all rows from a table
+	 * get all rows from table
 	 * @return list of all data from any specific table
 	 */
 	List<T> findAll();

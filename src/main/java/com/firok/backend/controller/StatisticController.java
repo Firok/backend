@@ -29,10 +29,6 @@ public class StatisticController {
 	 */
 	@GetMapping
 	public Statistic getStatisticCaseMemoryFile() {
-
-		// get all success transaction in case of memory database
-		// List<Transaction> transactionValues =
-		// transactionService.getAllSuccessTransaction();
 		
 		// get all success transaction in case of memory without database
 		List<Transaction> transactionValues = transactionService.getAllSuccessTransactionWithoutDatabase();
@@ -53,10 +49,6 @@ public class StatisticController {
 	@GetMapping("/db")
 	public Statistic getAllStatisticCaseDatabase() {
 
-		// get all success transaction in case of memory database
-		// List<Transaction> transactionValues =
-		// transactionService.getAllSuccessTransaction();
-		
 		// get all success transaction in case of memory without database
 		List<Transaction> transactionValues = transactionService.getAllSuccessTransactionWithoutDatabase();
 		DoubleSummaryStatistics stats = (!transactionValues.isEmpty() || transactionValues != null)

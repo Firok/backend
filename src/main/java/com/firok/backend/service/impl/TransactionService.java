@@ -28,7 +28,6 @@ public class TransactionService extends BaseService<Transaction, Long> implement
 
 	@Override
 	public List<Transaction> getAllSuccessTransactionWithoutDatabase() {
-
 		return transactionDao.getAllSuccessTransactionWithoutDatabase();
 	}
 

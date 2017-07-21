@@ -27,6 +27,7 @@ public class Transaction extends BaseEntity implements Serializable {
 	
 	private long timestamp;
 	
+	//status
 	private int status;
 	
 	

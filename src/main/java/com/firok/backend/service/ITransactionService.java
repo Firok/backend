@@ -10,7 +10,7 @@ import com.firok.backend.entity.Transaction;
 public interface ITransactionService extends IBaseService<Transaction, Long> {
 
 	/**
-	 * get All Success Transaction i.e from the last 60 seconds in-memory database
+	 * get All Success transaction i.e from the last 60 seconds in-memory database
 	 * @return
 	 */
 	List<Transaction> getAllSuccessTransaction();

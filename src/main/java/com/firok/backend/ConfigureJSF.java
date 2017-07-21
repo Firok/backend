@@ -17,7 +17,7 @@ public class ConfigureJSF {
 
 	@Bean
 	public ServletRegistrationBean facesServletRegistration() {
-
+		System.out.println("JSF CONFIG");
 		ServletRegistrationBean servletRegistrationBean = new JsfServletRegistrationBean();
 
 		return servletRegistrationBean;

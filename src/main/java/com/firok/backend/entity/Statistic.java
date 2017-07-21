@@ -6,6 +6,7 @@ public class Statistic implements Serializable{
 	
 	private static final long serialVersionUID  = 1L;
 	
+	//sum
 	private double sum;
 	
 	private double avg;

@@ -25,6 +25,9 @@ public class BackendChallengeApplicationTests {
 	}
 
 
+	/**
+	 * test Get All Transaction For Memory File API
+	 */
 	@Test
 	public void testGetAllTransactionForMemoryFileAPI() {
 

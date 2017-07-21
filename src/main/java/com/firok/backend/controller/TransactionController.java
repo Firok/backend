@@ -73,6 +73,7 @@ public class TransactionController {
 		return transaction.getStatus();
 	}
 
+	//testing /transactions api
 	@PostMapping("/post")
 	public Integer postTransactionAmount(@RequestParam String amount) {
 		// current time in UTC time zone

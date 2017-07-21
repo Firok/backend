@@ -4,6 +4,7 @@ import javax.persistence.Version;
 
 public class BaseEntity{
 
+	//
 	@Version
 	protected int version;
 

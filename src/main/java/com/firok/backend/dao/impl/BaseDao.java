@@ -25,6 +25,10 @@ public class BaseDao<T, K extends Serializable> implements IBaseDao<T, K> {
 		this.type = type;
 	}
 
+	/**
+	 * get all rows from table
+	 * @return list of all data from any specific table
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<T> findAll() {
