@@ -3,13 +3,13 @@ package com.firok.backend.service.impl;
 import java.io.Serializable;
 import java.util.List;
 
-import com.firok.backend.dao.IBaseDao;
-import com.firok.backend.service.IBaseService;
+import com.firok.backend.dao.BaseDao;
+import com.firok.backend.service.BaseService;
 
 
-public abstract  class BaseService<T, K extends Serializable> implements IBaseService<T, K> {
+public abstract  class BaseServiceImpl<T, K extends Serializable> implements BaseService<T, K> {
 
-	protected abstract IBaseDao<T, K> getDao();
+	protected abstract BaseDao<T, K> getDao();
 
 	/**
 	 * get all rows from table

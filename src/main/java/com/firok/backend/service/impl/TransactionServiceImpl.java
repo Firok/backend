@@ -5,19 +5,19 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.firok.backend.dao.IBaseDao;
-import com.firok.backend.dao.ITransactionDao;
+import com.firok.backend.dao.BaseDao;
+import com.firok.backend.dao.TransactionDao;
 import com.firok.backend.entity.Transaction;
-import com.firok.backend.service.ITransactionService;
+import com.firok.backend.service.TransactionService;
 
 @Service
-public class TransactionService extends BaseService<Transaction, Long> implements ITransactionService {
+public class TransactionServiceImpl extends BaseServiceImpl<Transaction, Long> implements TransactionService {
 
 	@Autowired
-	private ITransactionDao transactionDao;
+	private TransactionDao transactionDao;
 
 	@Override
-	protected IBaseDao<Transaction, Long> getDao() {
+	protected BaseDao<Transaction, Long> getDao() {
 		return transactionDao;
 	}
 

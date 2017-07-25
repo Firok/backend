@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.firok.backend.entity.Statistic;
 import com.firok.backend.entity.Transaction;
-import com.firok.backend.service.ITransactionService;
+import com.firok.backend.service.TransactionService;
 
 
 
@@ -20,7 +20,7 @@ import com.firok.backend.service.ITransactionService;
 public class StatisticController {
 
 	@Autowired
-	private ITransactionService transactionService;
+	private TransactionService transactionService;
 
 	/**
 	 * get Statistic case memory file

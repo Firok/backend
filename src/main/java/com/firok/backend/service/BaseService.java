@@ -3,7 +3,7 @@ package com.firok.backend.service;
 import java.io.Serializable;
 import java.util.List;
 
-public interface IBaseService<T, K extends Serializable> {
+public interface BaseService<T, K extends Serializable> {
 
 	/**
 	 * get all rows from table

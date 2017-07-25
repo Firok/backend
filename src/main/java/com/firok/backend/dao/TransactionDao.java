@@ -1,16 +1,13 @@
-package com.firok.backend.service;
+package com.firok.backend.dao;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import com.firok.backend.entity.Transaction;
 
-@Repository
-public interface ITransactionService extends IBaseService<Transaction, Long> {
+public interface TransactionDao extends BaseDao<Transaction, Long> {
 
 	/**
-	 * get All Success transaction i.e from the last 60 seconds in-memory database
+	 * get all Success Transaction i.e from the last 60 seconds in-memory database
 	 * @return
 	 */
 	List<Transaction> getAllSuccessTransaction();

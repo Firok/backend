@@ -11,16 +11,16 @@ import java.util.stream.Stream;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.firok.backend.dao.ITransactionDao;
+import com.firok.backend.dao.TransactionDao;
 import com.firok.backend.entity.Transaction;
 
 @Transactional
 @Repository
-public class TransactionDao extends BaseDao<Transaction, Long> implements ITransactionDao {
+public class TransactionDaoImpl extends BaseDaoImpl<Transaction, Long> implements TransactionDao {
 
 	private static final String fileName = "src/main/resources/transactions.txt";
 
-	public TransactionDao() {
+	public TransactionDaoImpl() {
 		super(Transaction.class);
 		// TODO Auto-generated constructor stub
 	}

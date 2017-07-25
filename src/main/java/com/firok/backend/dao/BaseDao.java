@@ -3,7 +3,7 @@ package com.firok.backend.dao;
 import java.io.Serializable;
 import java.util.List;
 
-public interface IBaseDao<T, K extends Serializable> {
+public interface BaseDao<T, K extends Serializable> {
 	
 	/**
 	 * get all rows from table

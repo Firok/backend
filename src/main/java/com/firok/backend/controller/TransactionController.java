@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import com.firok.backend.entity.Transaction;
-import com.firok.backend.service.ITransactionService;
+import com.firok.backend.service.TransactionService;
 
 @RestController
 @RequestMapping("/Transactions")
@@ -25,7 +25,7 @@ public class TransactionController {
 	private static final Logger log = LoggerFactory.getLogger(TransactionController.class);
 
 	@Autowired
-	private ITransactionService transactionService;
+	private TransactionService transactionService;
 
 	/**
 	 * get all transaction from file in memory
@@ -76,6 +76,7 @@ public class TransactionController {
 	//testing /transactions api
 	@PostMapping("/post")
 	public Integer postTransactionAmount(@RequestParam String amount) {
+		
 		// current time in UTC time zone
 		Instant before = Instant.now();
 		RestTemplate restTemplate = new RestTemplate();
