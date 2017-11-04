@@ -2,11 +2,11 @@
 
 REST API, Spring Boot , Java 8, JPA, Hibernate 
 
-## Endpoints API 
+### Endpoints API 
 
-## CASE MEMORY WITHOUT DATABASE
+### CASE MEMORY WITHOUT DATABASE
 
-## backend API transactions case File memory
+### backend API transactions case File memory
 
     Call http://localhost:8080/api/transaction for testing http://localhost:8080/api/Transactions/ API 
 
@@ -18,13 +18,13 @@ REST API, Spring Boot , Java 8, JPA, Hibernate
 
     URL http://localhost:8080/api/Transactions/
 
-## Get Statistics for all succes transaction from the last 60 seconds case file memory
+### Get Statistics for all succes transaction from the last 60 seconds case file memory
 
     URL http://localhost:8080/api/Statistics
 
-## CASE MEMORY DATABASE
+### CASE MEMORY DATABASE
 
-## backend API transactions
+### backend API transactions
 
     Get all transaction from database memory api METHOD GET
 
@@ -34,7 +34,7 @@ REST API, Spring Boot , Java 8, JPA, Hibernate
 
     URL http://localhost:8080/api/Transactions/db/
 
-## Get Statistics for all succes transaction from the last 60 seconds case database memory
+### Get Statistics for all succes transaction from the last 60 seconds case database memory
 
     URL http://localhost:8080/api/Statistics/db/  
 
